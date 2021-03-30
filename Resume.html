@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    *{margin:0;}
+    * {box-sizing: border-box}
+    html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 7px;
+    background: #431515;
+    color: rgb(228, 224, 224);
+    font-size: 10px;
+    background-image: url(https://xn--bl-8ia.com/wp-content/uploads/2019/02/sean-foley-759808-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size:100% 100%;
+  }
+.photo{
+    position:relative;
+    left:12%;
+    border-radius:50%;
+}
+.container {
+  width: 50%;
+  background-color: #ddd;
+  border-radius: 50px;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.html {width: 50%; background-color: #4CAF50;}
+.css {width: 40%; background-color: #2196F3;}
+.js {width: 35%; background-color: #f44336;}
+.php {width: 80%; background-color: #808080;}  
+.box{
+  position:relative;
+  background-color: lightgrey;
+  width:30%;
+  height:10%;
+  padding:10px;
+  margin:1px;
+  font-size: 28px;
+  background-image: url(https://xn--bl-8ia.com/wp-content/uploads/2019/02/sean-foley-759808-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size:100% 100%;
+}
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(24, 23, 23);
+  color:#ece9e9;
+  overflow-x: hidden;
+  padding-top: 50px;
+    background-image: url(https://wallpapercave.com/wp/wp4502925.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size:100% 100%;
+}
+
+.sidenav a {
+  padding: 6px 8px 10px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ece9e9;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #1fbb72;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  transform:scale(2);
+  position:relative;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  background-image: url(https://images.unsplash.com/photo-1531279550271-23c2a77a765c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8YWVzdGhldGljfGVufDB8fDB8&ixlib=rb-1.2.1&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  padding: 10px 10px;
+  color: rgb(255, 255, 255);
+}
+.table1,th,td{
+  border: 2px solid rgb(252, 248, 248);
+  border-collapse: collapse;
+  padding: 15px;
+  font-family: Verdana,Geneva, Tahoma, sans-serif;
+   font-size: 50%;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  
+  <a href="#start">&ensp;&ensp;&ensp;<button class="button"style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG2hjl9RJNxL_6hz390DKQYOw_fLWj05arlQ&usqp=CAU);background-size: contain;"></button>
+  <br>
+  <a href="#about">About me</a>
+  <a href="#quali">Qualifications</a>
+  <a href="#skills">Skills</a>
+  <a href="#social">Social Handles</a>
+  <a href="#hobbies">hobbies</a>
+  <a href="#whyme">why me?</a>
+</div>
+<div class="header">
+  <a id="start"><img class="photo" src="photo.jpg"width="300" height="300"></a>
+<div class="box">
+<p><u style="color:#18e485"><b>NAME</b></u>: V G Uday Krishnan</p>
+<br>
+<p><u style="color:#18e485"><b>DOB</b></u>: 09 March 2002</p>
+<br>
+<p><u style="color:#18e485"><b>PROFESSION</b></u>:Web Developer</p>
+<br>
+<p><u style="color:#18e485"><b>PHONE NO</b></u>:+917356694029</p>
+</div>
+</div>
+<div class="main">
+  <a id="about"><h2 style="color:#18e485">Who am i?</h2></a>  
+  <p>Hello there! I am Uday Krishnan from Cochin,Kerala doing my Undergraduate studies in Computer Science from Amrita School of Engineering,Amritapuri,Kollam. I have keen interesting in web-development and though i have only started recently i'm getting better at it everyday. I have also tried my hand in game development using python, hacking into apps and programming robots using arduino. </p>
+  <br>
+    <a id="quali"><h2 style="color:#18e485">Qualifications</h2></a>   
+  
+    <table> 
+      <tr> 
+      <th>Exam passed (With specialisation, if any)</th> 
+      <th>Year of Study</th>
+      <th>Name of the board / University</th>
+      <th>Percentage of Marks / CGPA</th>
+      <th>Grade/Class/Division-obtained</th>
+      </tr> 
+      <tr> 
+      <td>CBSE - Class 10</td> 
+      <td>2018</td>
+      <td>CBSE</td>
+      <td>88%</td>
+      <td>1st Div</td>
+      </tr> 
+      <tr> 
+      <td>CBSE - Class 12</td> 
+      <td>2020</td>
+      <td>CBSE</td>
+      <td>89.4%</td>
+      <td>1st Div</td>
+      </tr> 
+      </table>
+      <br>
+    <a id="skills"><h2 style="color:#18e485">Skills</h2></a>
+    <p>HTML</p>
+    <div class="container">
+      <div class="skills html">50%</div>
+    </div>
+    
+    <p>C</p>
+<div class="container">
+  <div class="skills css">40%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">35%</div>
+</div>
+
+<p>Python</p>
+<div class="container">
+  <div class="skills php">80%</div>
+</div>
+<br>  
+    <a id="social"><h2 style="color:#18e485">Social Handles</h2></a> 
+    <br />
+    &emsp;<a href="https://github.com/udaykrishnan9302" target="_blank"><button class="button" style="background: url(https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png);background-size:contain;" ></button></a>&emsp;&emsp;
+    <a href="https://www.linkedin.com/in/v-g-uday-krishnan-60a315209/" target="_blank"><button class="button" style="background: url(https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png);background-size: contain;"></button></a>&emsp;&emsp;
+    <a href="https://www.instagram.com/udayehehe/" target="_blank"><button class="button" style="background: url(https://png.pngtree.com/element_our/md/20180626/md_5b321ca3631b8.jpg);background-size: contain;"></button></a>&emsp;&emsp;
+    <a href = "mailto: drudaykrishnan@gmail.com"><button class="button" style="background: url(https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png);background-size: contain;"></button></a>
+    <br>
+    <br>
+    <p>Feel free to reach out to me at anytime</p>
+    <br>
+    <a id="strength"><h2 style="color:#18e485">My Strengths</h2></a>
+    <ul>
+      <li>Dedicated</li>
+      <li>Sincere</li>
+      <li>Hardworking</li>
+      <li>Ambitious</li>
+    </ul>
+    <br>
+    <a id="hobbies"><h2 style="color:#18e485">Hobbies</h2></a>
+    <p>I like playing badminton, read books, draw anime and videogame characters and play videogames.</p>
+    <br>
+    <a id="whyme"><h2 style="color:#18e485">Why choose me?</h2></a> 
+    <ul>
+      <li>Can do the work and deliver exceptional results</li>
+      <li>Will fit in beautifully and be a great addition to the team</li>
+      <li>Possess a combination of skills and experience that will make the team stand out</li>
+      <li>Will increase the productivity of the working team</li>
+    </ul>
+</div>
+   
+</body>
+</html> 
