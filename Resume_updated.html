@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Resume</title>
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+function setCookie(cname,cvalue,exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  let expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Glad to see you back " + user);
+  } else {
+     user = prompt("Hey! i see you're new here, What's your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user,1);
+     }
+  }
+}
+</script>
+    <style>
+      
+      .icon-black {
+  color: rgb(0, 0, 0);
+}
+.shadoweff{
+  box-shadow: 10px 10px 10px #000000;
+}
+
+table.table-bordered > thead > tr > th{
+    border:1px solid #5cb85c;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid #5cb85c;   
+}
+.form-control{border-width: 2px; border-color: #5cb85c;}
+.form-control:focus{border-color: #4aff02;  box-shadow:10px 10px 10px #000000; -webkit-box-shadow: none;} 
+.has-error .form-control:focus{box-shadow: none; -webkit-box-shadow: none;}
+.background-mount {
+    background-image: url("https://images.hdqwalls.com/wallpapers/evening-landscape-minimal-4k-kl.jpg");
+    background-repeat: no-repeat;
+    min-height : 100%;
+    min-width : 100%;
+    background-attachment: fixed;
+}
+    </style>
+  </head>
+  <body onload="checkCookie()">
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"style="color: #18e485">Home</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#quali">Qualifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#strength">Strength</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#social">Social Handles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobbies">Hobbies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#whyme">Why me?</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactme">Contact me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#madlibs">Madlibs</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron text-center background-mount" style="margin-bottom: 0">
+    </br>
+    </br>
+      <h1>Hi, I'm Uday!</h1>
+      <h5>And this is my Resume</h5>
+
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            class="photo shadoweff"
+            src="https://i.imgur.com/KSNUCaB.jpg"
+            width="300"
+            height="300"
+            shadoweff
+          />
+          <hr class="d-sm-none" />
+        </div>
+        <div class="col-sm-8">
+        </br></br>
+          <h5><b style="color: #04db65">NAME</b>: V G Uday Krishnan</h5>
+          <br />
+          <h5><b style="color: #04db65">DOB</b>: 09 March 2002</h5>
+          <br />
+          <h5><b style="color: #04db65">PROFESSION</b>: Web Developer</h5>
+          <br />
+          <h5><b style="color: #04db65">PHONE NO</b>: +917356694029</h5>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="container" style="margin-top: 30px">
+      
+      <a id="about"><h2 style="color: #18e485">Who am i?</h2></a>
+      
+      <p class="text-justify">
+        Hello there! I am Uday Krishnan from Cochin, Kerala doing my
+        Undergraduate studies in Computer Science from Amrita School of
+        Engineering, Amritapuri, Kollam. I have keen interest in web-development
+        and though i have only started recently i'm getting better at it
+        everyday. I have also tried my hand in game development using python,
+        hacking into apps and programming robots using arduino.
+      </p>
+      <br />
+      <a id="quali"><h2 style="color: #18e485">Qualifications</h2></a>
+      <div style="overflow-x:auto;">
+        
+      <table class="table table-hover table table-bordered">
+        <thead>
+          <tr>
+            <th>Exam passed (With specialisation, if any)</th>
+            <th>Year of Study</th>
+            <th>Name of the board / University</th>
+            <th>Percentage of Marks / CGPA</th>
+            <th>Grade/Class/Division-obtained</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CBSE - Class 10</td>
+            <td>2018</td>
+            <td>CBSE</td>
+            <td>88%</td>
+            <td>1st Div</td>
+          </tr>
+          <tr>
+            <td>CBSE - Class 12</td>
+            <td>2020</td>
+            <td>CBSE</td>
+            <td>89.4%</td>
+            <td>1st Div</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      <a id="skills"><h2 style="color: #18e485">Skills</h2></a>
+
+      
+      <div class="progress"style="height: 35px;">
+        <div
+          class="progress-bar bg-success progress-bar-striped progress-bar-animated rounded-pill"
+          role="progressbar"
+          aria-valuenow="50"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 50%"
+          
+        >
+          HTML 50%
+        </div>
+      </div>
+    </br>
+      <div class="progress"style="height: 35px;">
+        <div
+          class="progress-bar bg-info progress-bar-striped progress-bar-animated rounded-pill"
+          role="progressbar"
+          aria-valuenow="40"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 40%"
+        >
+          C Programming 40% 
+        </div>
+      </div>
+    </br>
+      <div class="progress"style="height: 35px;">
+        <div
+          class="progress-bar bg-warning progress-bar-striped progress-bar-animated rounded-pill"
+          role="progressbar"
+          aria-valuenow="30"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 30%"
+        >
+          JavaScript 30% 
+        </div>
+      </div>
+      </br>
+      <div class="progress"style="height: 35px;">
+        <div
+          class="progress-bar bg-danger progress-bar-striped progress-bar-animated rounded-pill"
+          role="progressbar"
+          aria-valuenow="70"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          style="width: 70%"
+        >
+          Python 70% 
+        </div>
+      </div>
+      </br>
+     
+      <a id="strength"><h2 style="color:#18e485">My Strengths</h2></a>
+    <ul>
+      <li>Multilinguistic</li>
+      <li>Dedicated</li>
+      <li>Sincere</li>
+      <li>Hardworking</li>
+      <li>Ambitious</li>
+    </ul>
+     <a id="social"><h2 style="color:#18e485">Social Handles</h2></a> 
+<a href="https://github.com/udaykrishnan9302" target="_blank"><i class="fab fa-github fa-5x icon-black"></i></a>&emsp;&emsp;      
+<a href="https://www.linkedin.com/in/v-g-uday-krishnan-60a315209/" target="_blank"><i class="fab fa-linkedin fa-5x icon-black"></i></a>&emsp;&emsp;      
+<a href="https://www.instagram.com/udayehehe/" target="_blank"><i class="fab fa-instagram fa-5x icon-black"></i></a>&emsp;&emsp;      
+<a href = "mailto:udaykrishnanvg@gmail.com"><i class="fa fa-envelope fa-5x icon-black"></i></a>&emsp;&emsp;      
+ <a href = "https://codeforces.com/profile/AMENU4CSE20273" target="_blank"><i class="fa fa-code fa-5x icon-black"></i></a>
+  </br>
+  </br>
+    <a id="hobbies"><h2 style="color:#18e485">Hobbies</h2></a>
+    <p>I like playing badminton, read books, draw anime and videogame characters and play videogames.</p>
+    
+    <a id="whyme"><h2 style="color:#18e485">Why choose me?</h2></a> 
+    <ul>
+      <li>Can do the work and deliver exceptional results</li>
+      <li>Will fit in beautifully and be a great addition to the team</li>
+      <li>Possess a combination of skills and experience that will make the team stand out</li>
+      <li>Will increase the productivity of the working team</li>
+    </ul>
+
+    <a id="contactme"><h2 style="color:#18e485">Contact Me:</h2></a> 
+    <form >
+      <div class="form-group">
+    <label for="name">Company/Individual's Name</label>
+    <input type="text" class="form-control" id="name"placeholder="Enter Name"pattern="[A-Za-z]">
+  </div>
+     <div class="form-group">
+    <label for="teleno">Contact Number:</label>
+    <input type="tel" class="form-control" id="teleno"placeholder="Enter Telephone/Mobile Number"pattern="[0-9]">
+  </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+    </div>
+    <label>Query Type:</label>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    General
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios1">
+    Business
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+  <label class="form-check-label" for="exampleRadios1">
+    Personal
+  </label>
+</div>
+</br>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Documents (if any)needed to be attached:</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</br>
+ <div class="form-group">
+    <label for="exampleTextarea">Suggestions/Message:</label>
+    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+  </div>
+  <div class="form-group">        
+      <div >
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <input class="btn btn-primary" type="reset" value="Reset">
+      </div>
+    </form>
+      
+    </div>
+    <a id="madlibs"><h2 style="color:#18e485">Play a Game of MADLIBS!</h2></a> 
+    <a href="madlibsforforms.html" target="_blank"><button type="button" class="btn btn-success">Play</button></a>
+  </br>
+  </br>
+</div>
+    <div class="jumbotron text-center background-mount" style="margin-bottom: 0">
+      <h2>Thank You for checking out my page</h2>
+    </br>
+    </div>
+  </body>
+</html>
