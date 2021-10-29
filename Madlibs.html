@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="main.css" />
+    <title>The Story Maker</title>
+  </head>
+  <style>
+    input[type="text"] {
+      width: 80%;
+      padding: 6px 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 2px solid #18e485;
+      border-radius: 4px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1 style="color: #18e485;text-align: center;">
+        <b><u>MADLIBS STORY MAKER</u></b>
+      </h1>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="storyforms.js"></script>
+      <h3>
+        <div class="form-row">
+          <div class="col-md-6">
+            <label>Enter a name you like: </label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="col-md-6">
+            <label>Enter a theme you like: </label>
+            <input type="text" class="form-control" id="theme" />
+          </div>
+          <div class="col-md-6">  
+        <label>Enter a place you like:</label>
+        <input type="text" class="form-control" id="place" />
+        </div>
+          <div class="col-md-6">
+        <label>Enter a day of the week: </label>
+        <input type="text" class="form-control" id="day" />
+        </div>
+        <div class="col-md-6">
+        <label>Enter any time: </label>
+        <input type="text" class="form-control" id="time" />
+        </div>
+        <div class="col-md-6">
+        <label>Enter a verb:</label>
+        <input type="text" class="form-control" id="verb" />
+        </div>
+        <div class="col-md-6">
+        <label>Enter a thing you like: </label>
+        <input type="text" class="form-control" id="thing" />
+        </div>
+         <div class="col-md-6">
+        <label>Enter a body part:</label>
+        <input type="text" class="form-control" id="body" />
+        </div>
+      </h3>
+      <button type="submit" value="Submit" onclick="myFunction()">
+        Submit
+      </button>
+      <p id="demo"></p>
+    </div>
+  </body>
+</html>
